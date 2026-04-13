@@ -1,0 +1,130 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;        
+  justify-content: center;
+  align-items: center;
+  gap: 30px;                    
+  background-image: url(./public/background.svg);
+}
+
+div > h1 {
+  font-size: 3rem;
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: white;
+  padding: 50px 60px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+#password {
+  padding: 12px 20px;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 320px;
+  outline: none;
+}
+
+#dots {
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  width: 28px;
+  height: 28px;
+  background-color: gray;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+#messaggio {
+  font-size: 1.5rem;
+  min-height: 2rem;
+  font-family: 'Nunito', sans-serif; font-family: 'Nunito', sans-serif;
+}
+
+@keyframes comparsa {
+  0%   { transform: scale(0); }
+  70%  { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.icona {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  animation: comparsa 0.4s ease forwards;
+}
+
+#resetBtn {
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#resetBtn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 480px) {
+  div > h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  #app {
+    padding: 32px 24px;
+    margin: 16px;
+    gap: 20px;
+    width: calc(100% - 32px);
+    box-sizing: border-box;
+  }
+
+  #password {
+    width: 100%;
+    font-size: 1.3rem;
+    letter-spacing: 6px;
+    padding: 10px 12px;
+  }
+
+  .dot {
+    width: 22px;
+    height: 22px;
+  }
+
+  #messaggio {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .icona {
+    width: 60px;
+  }
+
+  #resetBtn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
