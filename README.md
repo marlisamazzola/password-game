@@ -40,7 +40,3 @@ Se vuoi avviare il progetto localmente, segui questi passaggi:
     npm run dev
     ```
 
-
-## 📄 Licenza
-
-Questo progetto è rilasciato sotto la licenza MIT.
