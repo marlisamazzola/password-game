@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
 
-    <div id="app">
-      <h1>Indovina la password</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
 
-      <div id="dots">
-        <div class="dot" id="dot0"></div>
-        <div class="dot" id="dot1"></div>
-        <div class="dot" id="dot2"></div>
-        <div class="dot" id="dot3"></div>
-        <div class="dot" id="dot4"></div>
-      </div>
+<body>
 
-      <div id="messaggio"></div>
+  <div id="app">
+    <h1>Indovina la password</h1>
 
-      <button id="resetBtn">Riprova</button>
+    <div id="instructions">
+    <p>Trova la combinazione di 5 cifre:</p>
+    <ul>
+      <li><span><strong style="color: green;">Verde</strong>: Posizione esatta</span></li>
+      <li><span><strong style="color: yellow;" class="text-orange">Giallo</strong>: Cifra presente</span></li>
+      <li><span><strong style="color: red;" class="text-red">Rosso</strong>: Cifra assente</span></li>
+    </ul>
+  </div>
+
+    <div id="dots">
+      <div class="dot" id="dot0" style="background-color: gray;"></div>
+      <div class="dot" id="dot1" style="background-color: gray;"></div>
+      <div class="dot" id="dot2" style="background-color: gray;"></div>
+      <div class="dot" id="dot3" style="background-color: gray;"></div>
+      <div class="dot" id="dot4" style="background-color: gray;"></div>
     </div>
 
-    <script type="module" src="./src/Fase2/main.ts"></script>
-  </body>
-</html>
+    <div id="messaggio"></div>
+
+    <button id="resetBtn">Riprova</button>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+
+</body>

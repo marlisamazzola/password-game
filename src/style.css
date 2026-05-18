@@ -5,7 +5,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;                    
-  background-image: url(./public/background.svg);
+  background-image: url(../public/background.svg);
+  font-family: Nunito, sans-serif;
 }
 
 div > h1 {
@@ -43,11 +44,13 @@ div > h1 {
 }
 
 .dot {
-  width: 28px;
-  height: 28px;
-  background-color: gray;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  transition: background-color 0.3s;
+  display: inline-block;
+  margin: 5px;
+  background-color: gray; /* Colore iniziale */
+  transition: background-color 0.3s; /* Effetto fluido */
 }
 
 #messaggio {
@@ -93,14 +96,75 @@ div > h1 {
     padding: 0 16px;
   }
 
-  #app {
-    padding: 32px 24px;
-    margin: 16px;
-    gap: 20px;
-    width: calc(100% - 32px);
-    box-sizing: border-box;
-  }
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 90%;            /* Responsive su mobile */
+  max-width: 400px;      /* Limite su desktop */
+  box-sizing: border-box; /* Impedisce alle scritte di uscire dai bordi */
+}
 
+#instructions {
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+#instructions p {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center; 
+}
+
+#instructions ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+#instructions li {
+  margin-bottom: 5px;
+  text-align: left; 
+  display: flex;
+  justify-content: center; 
+}
+
+/* Input responsive */
+#password {
+  width: 100%;          
+  max-width: 280px;      
+  padding: 12px;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Media Query per schermi molto piccoli */
+@media (max-width: 400px) {
+  #app {
+    padding: 20px;
+  }
+  div > h1 {
+    font-size: 1.8rem;
+  }
+  #password {
+    letter-spacing: 4px;
+  }
+}
   #password {
     width: 100%;
     font-size: 1.3rem;
@@ -128,3 +192,4 @@ div > h1 {
     font-size: 1rem;
   }
 }
+
