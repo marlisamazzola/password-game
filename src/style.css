@@ -105,9 +105,9 @@ div > h1 {
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  width: 90%;            /* Responsive su mobile */
-  max-width: 400px;      /* Limite su desktop */
-  box-sizing: border-box; /* Impedisce alle scritte di uscire dai bordi */
+  width: 90%;          
+  max-width: 400px;     
+  box-sizing: border-box; 
 }
 
 #instructions {
@@ -140,7 +140,6 @@ div > h1 {
   justify-content: center; 
 }
 
-/* Input responsive */
 #password {
   width: 100%;          
   max-width: 280px;      
@@ -153,7 +152,6 @@ div > h1 {
   box-sizing: border-box;
 }
 
-/* Media Query per schermi molto piccoli */
 @media (max-width: 400px) {
   #app {
     padding: 20px;

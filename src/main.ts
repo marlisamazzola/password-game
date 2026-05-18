@@ -1,12 +1,11 @@
 import './style.css'
 
-// Generiamo la password come stringa per poter confrontare le singole cifre
+// Genera la password come stringa per poter confrontare le singole cifre
 let psw = Math.floor(Math.random() * 90000 + 10000).toString(); 
 console.log("Password segreta:", psw);
 
 const divApp = document.getElementById("app");
 
-// Creiamo l'input dinamicamente come nel tuo progetto originale
 createUserInputPassword();
 
 function createUserInputPassword() {
@@ -53,7 +52,6 @@ function verifyPswCorrect(PswUtente: string) {
   }
 }
 
-// Qui ho reinserito le tue icone originali
 function showMessage(correctCount: number) {
   const messaggio = document.getElementById("messaggio")!;
   if (correctCount === 5) {
