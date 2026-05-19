@@ -2,7 +2,6 @@ import './style.css'
 
 // Genera la password come stringa per poter confrontare le singole cifre
 let psw = Math.floor(Math.random() * 90000 + 10000).toString(); 
-console.log("Password segreta:", psw);
 
 const divApp = document.getElementById("app");
 
