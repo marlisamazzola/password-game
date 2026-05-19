@@ -59,6 +59,3 @@ npm run dev
 
 Apri il browser su `http://localhost:5173`.
 
-## Autrice
-
-Marlisa Mazzola — esercizio di frontend development con TypeScript e Vite
