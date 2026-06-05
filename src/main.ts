@@ -1,6 +1,4 @@
 import './style.css'
-import lockedComputer from '../assets/locked-computer.png'
-import unlock from '../assets/unlock.png'
 
 // Genera la password come stringa per poter confrontare le singole cifre
 let psw = Math.floor(Math.random() * 90000 + 10000).toString(); 
