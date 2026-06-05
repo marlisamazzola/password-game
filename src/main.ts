@@ -1,4 +1,6 @@
 import './style.css'
+import lockedComputer from '../assets/locked-computer.png'
+import unlock from '../assets/unlock.png'
 
 // Genera la password come stringa per poter confrontare le singole cifre
 let psw = Math.floor(Math.random() * 90000 + 10000).toString(); 
@@ -54,9 +56,9 @@ function verifyPswCorrect(PswUtente: string) {
 function showMessage(correctCount: number) {
   const messaggio = document.getElementById("messaggio")!;
   if (correctCount === 5) {
-    messaggio.innerHTML = `<img class="icona" src="./password-game/unlock.png"/><strong>Password corretta!</strong>`;
+    messaggio.innerHTML = `<img class="icona" src="${unlock}"/><strong>Password corretta!</strong>`;
   } else {
-    messaggio.innerHTML = `<img class="icona" src="./password-game/locked-computer.png"/><strong>Password errata!</strong>`;
+    messaggio.innerHTML = `<img class="icona" src="${lockedComputer}"/><strong>Password errata!</strong>`;
   }
 }
 
