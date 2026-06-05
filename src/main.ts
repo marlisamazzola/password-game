@@ -54,9 +54,9 @@ function verifyPswCorrect(PswUtente: string) {
 function showMessage(correctCount: number) {
   const messaggio = document.getElementById("messaggio")!;
   if (correctCount === 5) {
-    messaggio.innerHTML = `<img class="icona" src="./password-game/public/unlock.png"/><strong>Password corretta!</strong>`;
+    messaggio.innerHTML = `<img class="icona" src="./password-game/unlock.png"/><strong>Password corretta!</strong>`;
   } else {
-    messaggio.innerHTML = `<img class="icona" src="./password-game/public/locked-computer.png"/><strong>Password errata!</strong>`;
+    messaggio.innerHTML = `<img class="icona" src="./password-game/locked-computer.png"/><strong>Password errata!</strong>`;
   }
 }
 
