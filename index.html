@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <script type="module" crossorigin src="/password-game/assets/index-1086f955.js"></script>
+  <link rel="stylesheet" href="/password-game/assets/index-9a74adda.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <h1>Indovina la password</h1>
+
+    <div id="instructions">
+    <p>Trova la combinazione di 5 cifre:</p>
+    <ul>
+      <li><span><strong style="color: green;">Verde</strong>: Posizione esatta</span></li>
+      <li><span><strong style="color: yellow;" class="text-orange">Giallo</strong>: Cifra presente</span></li>
+      <li><span><strong style="color: red;" class="text-red">Rosso</strong>: Cifra assente</span></li>
+    </ul>
+  </div>
+
+    <div id="dots">
+      <div class="dot" id="dot0" style="background-color: gray;"></div>
+      <div class="dot" id="dot1" style="background-color: gray;"></div>
+      <div class="dot" id="dot2" style="background-color: gray;"></div>
+      <div class="dot" id="dot3" style="background-color: gray;"></div>
+      <div class="dot" id="dot4" style="background-color: gray;"></div>
+    </div>
+
+    <div id="messaggio"></div>
+
+    <button id="resetBtn">Riprova</button>
+  </div>
+
+  
+
+</body>
